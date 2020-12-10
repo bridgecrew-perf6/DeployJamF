@@ -1,0 +1,47 @@
+%style-btn {
+  margin-right: 1rem;
+  background-color: #f4f2ff;
+  border: none;
+  color: #6b5db0;
+  font-weight: 700;
+  &:hover,
+  &:active {
+    color: #6b5db0;
+  }
+}
+
+.modal {
+  .jam-factory-average {
+    .style-btn {
+      @extend %style-btn;
+    }
+  }
+  .modal-btn {
+    .style-btn {
+      @extend %style-btn;
+    }
+  }
+  .search-number-of-review, .sale-search {
+    .ant-input-affix-wrapper {
+      background-color: #f4f2ff;
+      border: none;
+      .ant-input {
+        background-color: #f4f2ff !important;
+      }
+    }
+    .site-input-split {
+      background-color: transparent !important;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .modal {
+    .jam-factory-average {
+      .style-btn {
+        width: 63vw;
+        font-size: 10px;
+      }
+    }
+  }
+}
